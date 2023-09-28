@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    background-color: aliceblue;
+    width: fit-content;
+    border-radius: 25px;
+    height: auto;
+    padding: 2vh;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 10px;
+    width: 90%;
+}
+.logininfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+.loginfield{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+label{
+    font-size: 12px;
+    font-weight: 700;
+    align-self: self-start;
+    margin: 10px 0;
+}
+.img{
+    width: fit-content;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+h1{
+    font-size: 60px;
+    font-weight: 700;
+}
+p{
+    word-wrap: break-word;
+    font-size: 16px;
+    font-weight: 500;
+}
+ul{
+    font-size: 16px;
+    font-weight: 500;
+    vertical-align: middle;
+    list-style-image: url(assets/images/icon-list.svg);
+    width: fit-content;
+    height: fit-content;
+}
+
+li{
+    width: fit-content;
+    height: fit-content;
+}
+li::marker{
+    width: 10px;
+    height: 10px;
+}
+
+input{
+    width: 100%;
+    height: 15%;
+    font-size: 16px;
+    padding: 28px 20px;
+    margin: 0 0 20px 0;
+    border-radius: 8px;
+    border: 1px solid hsla(0, 0%, 50%, 0.500);
+}
+input:hover{
+    cursor: pointer;
+}
+input:valid{
+    cursor: pointer;
+}
+#submit{
+    width: 100%;
+    height: 15%;
+    font-size: 16px;
+    padding: 28px 20px;
+    border-radius: 8px;
+    line-height: 15%;
+    color: white;
+    font-weight: 700;
+    border: 0px solid hsla(0, 0%, 50%, 0.500);
+    background-color: hsl(234, 29%, 20%);
+}
+#submit:hover{
+    cursor: pointer;
+    background: linear-gradient(to right, hsl(334, 100%, 70%), hsl(4, 100%, 67%))
+}
